@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Sumiya Kiho-an Ryokan すみや亀峰菴旅館、京都日本</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/style.css" media="screen" title="no title">
+	<link href="https://fonts.googleapis.com/css?family=Julius+Sans+One&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:300,700&display=swap&subset=japanese" rel="stylesheet">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	</head>
+		<body>
+			<div id="container">
+				<div id="myNav" class="overlay">
+				  <div class="overlay-content">
+					<a href="index.html">Home</a>
+					<a href="about.html">About</a>
+					<a href="rooms.html">Rooms</a>
+					<a href="cuisine.html">Cuisine</a>
+					<a href="onsen.html">Onsen & Spa</a>
+					<a href="reservations.html">Reservations</a>
+					<a href="info.html">Information</a>
+					<a href="login.html">Log In</a>
+					<a href="javascript:void(0)" id="xbutton" class="closebtn" onclick="closeNav()">&times;</a>
+				  </div>
+				</div>
+			<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+			<h1 id="maintitle">Sumiya Kiho-An Ryokan Kyoto, Japan <div class="jpntxt">すみや亀峰菴旅館、京都日本</div></h1>
+				<section class="row1">
+					<!--<video width="100%" height="100%" controls autoplay data-aos="fade-up" poster="roomopenair.jpg">
+     					 <source src=”images/sumiya.mp4” type=video/mp4>
+   					 </video>-->
+					<img src="images/roomopenair.jpg" id="mainimg" alt="Ryokan Room View" style="width:100%;" data-aos="fade-up">
+					<div id="tagline" data-aos="fade">A perfect getaway in Kyoto, Japan.<br>Yunohana natural hot spring resort.<br>Japanese style hotel.</div>
+				</section>
+				
+				<section class="row2" data-aos="fade-up">
+					<a  href="rooms.html" class="textWithBlurredBg"><img src="images/room1resized.jpg" id="roomimg"><h3>Rooms</h3></a>
+					<!-- <img src="images/logos/key.png" id="roomlogo"> -->
+					<p id="roomtxt"><a href="rooms.html" class="title">Rooms</a><br><br>Our accommodation Ryokan provides the perfect opportunity to immerse yourself in Japan’s truly unique culture. Staying in a tatami room at Ryokan is highly recommended if you have an interest in sampling a traditional Japanese lifestyle.</p>
+					
+					
+					<a href="cuisine.html" class="textWithBlurredBg"><img src="images/dinner.jpg" id="foodimg"><h3>Cuisine</h3></a>
+					<!-- <img src="images/logos/sushiplate.png" id="foodlogo"> -->
+					<p id="foodtxt"><a href="cuisine.html" class="title">Cuisine</a><br><br>Experience Kyoto’s unique charm. Artistic and refined, Kaiseki uses seasonal ingredients that are cooked to enhance their natural flavour. Indulge an array of Japanese cuisine during your stay with us.</p>
+					
+					
+					<a href="onsen.html" class="textWithBlurredBg"><img src="images/onsen.jpg" id="onsenimg"><h3>Onsen & Spa</h3></a>
+					<!-- <img src="images/logos/spa.png" id="spalogo">-->
+					<p id="onsentxt"><a href="onsen.html" class="title">Onsen & Spa</a><br><br>Onsen hot springs provide you with a soothing and healing experience, beneficial both mentally and physically. Also, taking Onsen in Sumiya Kiho-an's natural environment enhances the healing experience.</p>
+					
+					<img src="images/drinkslong.jpg" id="reservationimg">
+					<p id="reservationtxt"><a href="reservations.html" id="reservlink" class="title">Make a Reservation</a><br><br>Book your Ryokan experience today with us online or via mobile phone. Choose between a variety of wonderful rooms, dining plans, and activity packages.<br><br>We look forward to your stay with us.<br>– The Sumiya Kiho-an Ryokan Team</p>
+					<p id="infotxt"><a href="info.html" class="title">Contact & Questions</a><br><br>Please feel free to get in touch with us via online contact form or phone call. We have provided a list of frequently asked questions for your convenience. Thank you.<br><br><a href="maps.html" class="title">Maps & Transportation</a></p>
+				</section>
+			</div> 
+			<footer>
+				<img src="images/header_logo.png" id="footerlogo" align="left">
+				<p id="address"> Kyoto Yunohana Onsen Hot Spring Resort<br>
+					SUMIYA KIHO-AN (JAPANESE RYOKAN)<br>
+					Zipcode 621-0036<br>
+					Yunohana onsen, Kameoka city, Kyoto Pref, Japan<br>
+					TEL +81-771-22-7722 In Japan 0771-22-7722<br>
+				</p>
+				<p id="copyright">Copyright @ Isabella Wood, 2020. All Rights Reserved.</p>
+			</footer> 
+			<script>
+				function openNav() {
+				  document.getElementById("myNav").style.height = "100%";
+				}
+
+				function closeNav() {
+				  document.getElementById("myNav").style.height = "0%";
+				}
+			</script>
+			<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+			<script>
+ 			 AOS.init({
+ 			 	duration: 3000,
+ 			 	delay: 100,
+ 			 });
+			</script>
+		</body>
+</html>

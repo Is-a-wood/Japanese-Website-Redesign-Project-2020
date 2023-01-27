@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Sumiya Kiho-an Ryokan すみや亀峰菴旅館、京都日本</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/style.css" media="screen" title="no title">
+	<link href="https://fonts.googleapis.com/css?family=Julius+Sans+One&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:300,700&display=swap&subset=japanese" rel="stylesheet">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	</head>
+		<body>
+			<div id="container">
+				<div id="myNav" class="overlay">
+				  <div class="overlay-content">
+					<a href="index.html">Home</a>
+					<a href="about.html">About</a>
+					<a href="rooms.html">Rooms</a>
+					<a href="cuisine.html">Cuisine</a>
+					<a href="onsen.html">Onsen & Spa</a>
+					<a href="reservations.html">Reservations</a>
+					<a href="info.html">Information</a>
+					<a href="login.html">Log In</a>
+					<a href="javascript:void(0)" id="xbutton" class="closebtn" onclick="closeNav()">&times;</a>
+				  </div>
+				</div>
+			<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+			<h1 id="maintitle">Sumiya Kiho-An Ryokan Kyoto, Japan <div class="jpntxt">すみや亀峰菴旅館、京都日本</div></h1>
+				<br><br><p class="title"><strong>Reservations</strong></p>
+				<form action="/roomavailability.html">
+							 Your Last Name / Family Name:
+  					<input name="lastname" type="text">					
+					<p class="title"><strong>Select your date of stay:</strong>
+						<br><br>
+				  <label for="week">Week:</label>
+                  <input type="week" name="week" id="week">
+<label for="date">Date:</label>
+                  <input type="date" name="date" id="date">
+<p class="title"><strong>Select your room preference:</strong>
+</p>
+	
+<select name="room"	required>
+	<option>Sawarabi (Japanese Style) </option>
+	<option>Yama No Terrace (Japanese Style)</option>
+	<option>Honami (Japanese Style)</option>
+	<option>Seoto (Japanese Style)</option>
+	<option>Yama No Iori (Japanese Style)</option>
+	<option>Tougasumi (Japanese Style)</option>
+	<option>Tsuki-Oboro (Japanese Style)</option>
+	<option>Seiyu (Western Style)</option>
+	<option>Akatoki (Western Style)</option>
+</select>
+					<br>
+					<br>
+					<input type="submit" name="check availability" id="Submit" value="Check Availability and Rates">
+				</form>
+			</div> 
+		
+			<script>
+				function openNav() {
+				  document.getElementById("myNav").style.height = "100%";
+				}
+
+				function closeNav() {
+				  document.getElementById("myNav").style.height = "0%";
+				}
+			</script>
+			<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+			<script>
+ 			 AOS.init({
+ 			 	duration: 3000,
+ 			 	delay: 100,
+ 			 });
+			</script>
+			<script>
+				
+			(function($){
+              function floatLabel(inputType){
+                      $(inputType).each(function(){
+                          var $this = $(this);
+                          // on focus add cladd active to label
+                          $this.focus(function(){
+                              $this.next().addClass("active");
+                          });
+                          //on blur check field and remove class if needed
+                          $this.blur(function(){
+                              if($this.val() === '' || $this.val() === 'blank'){
+                                  $this.next().removeClass();
+                              }
+                          });
+                      });
+                  }
+                  // just add a class of "floatLabel to the input field!"
+                  floatLabel(".floatLabel");
+              })(jQuery);</script>
+		</body>
+</html>
