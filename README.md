@@ -2,4 +2,4 @@
 
 2020 'Gold Addy Award' Winner by AAF (American Advertising Federation)
 
-Goal: Redesign the English version of a Japanese Traditional Inn's website. Current UX in 2020 was confusing to western users when arriving on site. Redesigned the style to include large images, white space, and high-end simplicity paired with serif fonts to stay on brand and elevate the experience.
+Goal: Redesign the English version of a Japanese Traditional Inn's website. Current UX in 2020 was confusing to western users when arriving on site. Redesigned the style to include large images, white space, with greater simplicity paired with serif fonts.
