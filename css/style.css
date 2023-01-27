@@ -1,0 +1,1174 @@
+/* CSS for Ryokan Website */
+
+
+
+												/* COMMON */
+body {
+  font-family: 'Lato', sans-serif;
+  font-family: 'Julius Sans One', sans-serif;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 2%;
+}
+ 
+p {
+	font-family: 'Noto Sans JP', sans-serif;
+	font-weight: 300;
+	font-size: 0.9em;
+}
+
+.title {
+  font-family: 'Lato', sans-serif;
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 1.5em;
+}
+
+footer{
+	display:block;
+ 	bottom: 0;
+ 	left: 0;
+ 	clear: both;
+  	width: 100%;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	background: #fff;
+	color: #000;
+	text-align: left;
+	padding: .5rem;
+}
+footer img {
+	width: 10%;
+	margin-right: 1%;
+}
+
+#address {
+	font-size: 0.67em;
+
+}
+
+#copyright {
+	font-size: 0.75em;
+}
+
+.space {
+	margin-top: 10%;
+	margin-bottom: 15%;
+}
+
+.dummy {
+	clear:both;
+}
+
+#container {
+	max-height: 100%;
+ 	max-width: 100%;
+	/*display: flex; 
+  	flex-direction: column; */
+}
+
+
+												/* link styling */
+a:link {
+    color: #000;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #000000;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #81B281;
+    text-decoration: line-through;
+    line-through-color: #92c787;
+}
+
+a:active {
+	color: #92c787;
+}
+
+												/* link styling */
+
+#reservlink a:link {
+	background-color: #92c787;
+	padding: 2%;
+}
+
+#reservlink a:hover {
+	background-color: #a1a1a1;
+	padding: 2%;
+}
+
+#container {
+	margin-bottom: 1%;
+}
+
+											/* NAVIGATION STYLE CODE */
+
+span {
+	position: absolute;
+	background-color: #fff;
+	top: 30px;
+	right: 30px;
+}
+
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: rgb(255,255,255);
+  background-color: rgba(255,255,255, 1);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 10%;
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #525252;
+  display: block;
+  transition: 0.3s;
+  line-height: 3rem;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #a1a1a1;
+  text-decoration: line-through;
+}
+
+.overlay .closebtn {
+  font-size: 3rem;
+}
+
+#xbutton {
+  text-decoration: none;
+}
+
+
+
+
+
+
+														/* INDEX */
+  
+.jpntxt {
+	font-family: 'Noto Sans JP', sans-serif;
+	font-weight: 300;
+}  
+  
+img {
+	margin: 0;
+	padding: 0;
+	max-width: 100%;
+}
+
+#tagline {
+	margin-top: 5%;
+	margin-bottom: 5%;
+	font-size: 1.2em;
+	line-height: 35px;
+	text-align: center;
+}
+
+.indexlinks a:link{
+	color: #000;
+	
+}
+
+.indexlinks a:hover{
+	color: #80C17F;
+	text-decoration: line-through;
+	
+}
+.indexlinks a:active{
+	color: #000;
+	
+}
+
+.indexlinks a:visited{
+	color: #000;
+	
+}
+
+.row2 { 
+	display: grid;
+	grid-gap: 25px;
+	margin-top: 4%;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-areas: 
+		"a b c"
+		"d e f"
+		". . ."
+		". . ."
+		". z ."
+		". . ."
+		". . ."
+		"g g h"
+		"g g i";
+}
+
+#roomimg {
+	grid-area: a;
+}
+
+#roomtxt {
+	grid-area: d;
+	line-height: 1.7rem;
+}
+
+#foodimg {
+	grid-area: b;
+}
+
+#foodtxt {
+	grid-area: e;
+	line-height: 1.7rem;
+
+}
+
+#onsenimg {
+	grid-area: c;
+}
+
+#onsentxt {
+	grid-area: f;
+	line-height: 1.7rem;
+
+}
+
+.bookbutton {
+	grid-area: z;
+	background-color: #94BC84;
+	color: #fff;
+	margin-top: 5%;
+	padding: 2%;
+	text-align: center;
+}
+
+.bookbutton a:link {
+	color: #fff;
+	text-decoration: none;
+}
+
+.bookbutton a:visited {
+	color: #fff;
+	text-decoration: none;
+}
+
+
+.bookbutton:hover {
+	background-color: #819e6a;
+	color: #fff;
+	text-decoration: none;
+}
+
+.bookbutton a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+#reservationimg {
+	grid-area: g;
+	width:100%;
+}
+
+#reservationtxt {
+	grid-area: h;
+	line-height: 1.7rem;
+
+}
+
+#infotxt {
+	grid-area: i;
+}
+
+/*LOGOS IN GRID*/
+
+#roomlogo {
+	grid-area: aa;
+	width: 20%
+}
+
+#foodlogo {
+	grid-area: bb;
+	width: 20%
+}
+
+#spalogo {
+	grid-area: cc;
+	width: 20%
+}
+
+
+
+										/* IMG HOVER TEXT */
+.textWithBlurredBg{
+    height:auto;
+    position: relative;
+	transition:.3s;
+  }
+  
+  .textWithBlurredBg img{
+    width:100%;
+    height:100%;
+    transition:.3s;
+  }
+  
+  .textWithBlurredBg:hover img{
+    filter:blur(0.5px) brightness(75%);
+  }
+   
+  .textWithBlurredBg :not(img){
+    position: absolute;
+    z-index:1;
+    width:100%;
+    text-align:center;
+    color:#fff;
+    opacity:0;
+    transition:.3s;
+  }
+  
+  .textWithBlurredBg h3{
+    top:50%
+  }
+  
+  .textWithBlurredBg:hover :not(img){
+    opacity:1;
+  }
+  
+  										/* IMG HOVER TEXT ROOMS PAGE*/
+  .textWithBlurredBg2{
+    height:auto;
+    position: relative;
+	transition:.3s;
+  }
+  
+  .textWithBlurredBg2 img{
+    width:100%;
+    height:100%;
+    transition:.3s;
+  }
+  
+  .textWithBlurredBg2:hover img{
+    filter:blur(0.5px) brightness(75%);
+  }
+   
+  .textWithBlurredBg2 :not(img){
+    position: absolute;
+    z-index:1;
+    width:100%;
+    text-align:center;
+    color:#fff;
+    opacity:0;
+    transition:.3s;
+  }
+  
+  .textWithBlurredBg2 h3{
+    top:50%;
+  }
+  
+  .textWithBlurredBg2:hover :not(img){
+    opacity:1;
+  }
+
+
+
+
+											/* ROOMS */
+#downarrow {
+	width: 6%;
+	margin-left: 50%;
+	margin-top: 2%;
+}
+
+.roomlayout {
+	margin-top: 18%;
+	margin-bottom: 8%;
+	display: grid;
+	grid-column-gap: 25px;
+	grid-row-gap: 200px;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-areas:
+		"k k l"
+		"e d d"
+		"g g h"
+		"j i i"
+		"a a c"
+		"n m m"
+		"o o p"
+		"r q q"
+		"s s t";
+}
+
+		
+	/*	"k k ."
+		"l l ."
+		". d d"
+		". e e"
+		"g g ."
+		"h h ."
+		". i i"
+		". j j"
+		"a a ."
+		"c c ."
+		". m m"
+		". n n"
+		"o o ."
+		"p p ."
+		". q q"
+		". r r"
+		"s s ."
+		"t t ."
+		". . ."*/
+#a {
+	grid-area: a;
+}
+ 
+#b {
+	grid-area: b;
+}
+ 
+#c {
+	grid-area: c;
+}
+
+#d {
+	grid-area: d;
+}
+
+#e {
+	grid-area: e;
+}
+
+#f {
+	grid-area:f;
+}
+
+#g {
+	grid-area:g;
+}
+
+#h {
+	grid-area:h;
+}
+
+#i {
+	grid-area:i;
+}
+
+#j {
+	grid-area:j;
+}
+
+#k {
+	grid-area:k;
+}
+
+#l {
+	grid-area:l;
+}
+
+#m {
+	grid-area:m;
+}
+
+#n {
+	grid-area:n;
+}
+
+#o {
+	grid-area:o;
+}
+
+#p {
+	grid-area:p;
+}
+
+#q {
+	grid-area:q;
+}
+
+#r {
+	grid-area:r;
+}
+
+#s {
+	grid-area:s;
+}
+
+#t {
+	grid-area:t;
+}
+
+#kanji {
+	width: 10%;
+	float: left;
+	margin-left: 22%;
+}
+
+#nexttokanji {
+	margin-top: 10%;
+}
+
+#roomheader {
+	margin-top: 10%;
+	margin-left: 35%;
+	margin-right: 20%;
+	font-size: 1.8rem;
+}
+
+#roomintrotext {
+	color: #628c56;
+	font-size: 1.1rem;
+	text-align: left;
+	margin-left: 35%;
+	margin-right: 20%;
+}
+
+#roomintrotxt {
+	margin-top: 15%;
+	margin-left: 35%;
+	margin-right: 20%;
+	line-height: 2rem;
+}
+
+.roombutton {
+	grid-area: z;
+	background-color: #c9d6b2;
+	color: #fff;
+	margin-top: 5%;
+	padding: 3%;
+	text-align: center;
+}
+
+.roombutton a:link {
+	color: #fff;
+	background-color: #c9d6b2;
+	text-decoration: none;
+}
+
+.roombutton a:visited {
+	color: #fff;
+	text-decoration: none;
+}
+
+.roombutton:hover {
+    background-color: #90BA85;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+#confirmbooking {
+	margin-top: 30%;
+	margin: 0 auto;
+	padding: 1%;
+	margin-left: 0;
+}
+										/* CUISINE */
+										
+#topcontainer {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr); 
+	margin-top: 3%;
+	margin-bottom: 3%;
+	grid-gap: 25px;
+	grid-template-areas:
+		"chef chef chef chef chef chef chef"
+		"chef chef chef chef chef chef chef"
+		". . kanji dinetxt dinetxt . ."
+		". . kanji dinetxt dinetxt . ."
+		". . kanji . . . ."
+		". dine one two three four .";
+}
+
+.button {
+	grid-area: z;
+	background-color: #c9d6b2;
+	color: #fff;
+	margin-top: 2%;
+	padding: 3%;
+	text-align: center;
+}
+
+.button a:link {
+	color: #fff;
+	text-decoration: none;
+}
+
+.button:hover {
+	background-color: #819e6a;
+	text-decoration: none;
+	color:#fff;
+}
+
+.button a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+#cuisineabouttext {
+	margin-left: 15%;
+	margin-right: 15%;
+}
+
+
+#kanji2 {
+    grid-area: kanji;
+    width: 50%;
+    height: 90%;	
+	margin-top: 20%;
+}
+
+#dinetxt {
+	grid-area: dinetxt;
+	
+}
+
+#chef {
+	grid-area: chef;
+	margin-bottom: 3%;
+}
+
+#one {
+	grid-area: one;
+}
+
+#two {
+	grid-area: two;
+}
+
+#three {
+	grid-area: three;
+}
+
+#four {
+	grid-area: four;
+}
+
+#dine {
+	grid-area: dine;
+}
+
+.centeredtxt {
+	line-height: 2rem;
+	margin-top: 20%;
+	margin-bottom: 20%;
+
+}
+#bottomcontainer {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr); 
+	margin-top: 10%;
+	margin-bottom: 3%;
+	margin-left: 15%;
+	margin-right: 15%;
+	grid-gap: 20px;
+	grid-template-areas:
+		"food1 food2 food2"
+		"food3 food2 food2"
+		"food4 food7 food8"
+		"food5 food5 food9"
+		"food5 food5 food6";
+}
+
+#food1 {
+	grid-area: food1;
+}
+
+#food2 {
+	grid-area: food2;
+}
+
+#food3 {
+	grid-area: food3;
+}
+
+#food4 {
+	grid-area: food4;
+}
+
+#food5 {
+	grid-area: food5;
+}
+
+#food6 {
+	grid-area: food6;
+}
+
+#food7 {
+	grid-area: food7;
+}
+
+#food8 {
+	grid-area: food8;
+}
+
+#food9 {
+	grid-area: food9;
+}
+
+
+
+
+											/* RESPONSIVE LAYOUTS */
+/* FOR NARROW SCREENS */
+/* MAX width = What this query really means, is “If [device width] is less than or equal to 600px, then do {…}” */
+
+/* MIN width = What this query really means, is “If [device width] is greater than or equal to 600px, then do {…}” */
+
+
+@media screen and (max-height: 600px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {
+  	font-size: 1rem;  
+  	}
+	
+  .overlay .closebtn {
+  	font-size: 1rem;
+  	top: 30px;
+  	right: 30px;
+  }
+}
+ 
+ 
+/* @media screen and (max-width: 980px) {
+		body {
+			margin: 0;
+			padding: 0;
+		}
+		p {
+			margin: 4%;
+		}
+		
+		#maintitle {
+			margin-left: 4%;
+			font-size: 1rem;
+		}
+		
+		#mainimg {
+			
+		}
+		
+		#tagline {
+			font-size: 1rem;
+			line-height: 30px;
+			padding: 2%;
+		}
+		
+		#mainimg {	
+			grid-template-columns: 1fr;
+			grid-template-rows: 50%
+
+		}
+
+
+		.row2 {
+			display: grid; 
+			grid-template-columns: 1fr; 
+			grid-template-areas:
+				"a"
+				"d"
+				"b"
+				"e"
+				"c"
+				"f"
+				"g"
+				"h"
+				"i";
+		}
+		#infotxt {
+			margin-top: 0;
+		}
+
+		
+		footer img {
+			width: 20%;
+			margin-left: 4%;
+			margin-right: 3%;
+		}
+		
+		footer {
+			font-size: 
+		}
+	
+		img {
+			width: 100%;
+		}
+}*/
+
+
+ /* NEW RESPONSIVE LAYOUTS*/
+							/* keep responsive */	
+										
+										
+										
+										
+											
+@media screen and (max-height: 738px) {
+	  .overlay {overflow-y: auto;}
+	  .overlay a {
+	  		font-size: 1rem;
+	  		line-height: 1.5rem;
+		}
+	  .overlay .closebtn {
+	  	font-size: 2rem;
+	  	top: 30px;
+	  	right: 30px;
+	  }
+}
+ 
+ /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	.overlay {overflow-y: auto;}
+	.overlay a {
+		font-size: 1.2rem;
+		line-height: 3rem;
+	}
+	.overlay .closebtn {
+	font-size: 3rem;
+	top: 30px;
+	right: 30px;
+	}
+	
+	body {
+		margin: 0;
+		padding: 0;
+	}
+		
+	p {
+		font-size: 1rem;
+		margin: 4%;
+	}
+	
+	#mainimg {	
+		grid-template-columns: 1fr;
+		grid-template-rows: 50%
+	}
+
+	.row2 {
+		display: grid; 
+		grid-template-columns: 1fr; 
+		grid-template-areas:
+			"a"
+			"d"
+			"b"
+			"e"
+			"c"
+			"f"
+			"z"
+			"g"
+			"h"
+			"i";
+	}
+	
+	#infotxt {
+		margin-top: 0;
+	}
+
+	
+	footer img {
+		width: 20%;
+		margin-left: 4%;
+		margin-right: 3%;
+	}
+	
+	footer {
+		font-size: 
+	}
+
+	img {
+		width: 100%;
+	}
+	
+	#maintitle {
+		font-size: 1.2rem;
+		line-height: 1.5rem;
+		margin-left: 3%;
+	}
+	#tagline {
+		font-size: 1rem;
+		line-height: 1.5rem;
+		padding: 2%;
+	}
+		
+	.title {
+		font-size: 1.5rem;
+	}
+	
+	
+	footer {
+		font-size: 0.7rem;
+	}
+	
+	
+	 /* EXTRA SMALL ROOMS RESPONSIVE LAYOUT*/
+	 
+	 
+	 .roomlayout {
+		margin-top: 18%;
+		margin-bottom: 8%;
+		display: grid;
+		grid-row-gap: 50px;
+		grid-template-columns: 1fr;
+		grid-template-areas:
+			"k"
+			"l"
+			"d"
+			"e"
+			"g"
+			"h"
+			"i"
+			"j"
+			"a"
+			"c"
+			"m"
+			"n"
+			"o"
+			"p"
+			"q"
+			"r"
+			"s"
+			"t";
+	}
+	.roombutton {
+		grid-area: z;
+		background-color: #c9d6b2;
+		color: #fff;
+		margin-top: 0%;
+		margin-left: 5%;
+		padding: 3%;
+		text-align: center;
+	}
+	
+	.roombutton2 {
+		grid-area: z;
+		background-color: #c9d6b2;
+		color: #fff;
+		margin-top: 5%;
+		margin: 0 auto;
+		margin-left: 5%;
+		padding: 3%;
+		text-align: center;
+	}
+	
+	
+	#ryokandescrip {
+		margin-top: 18%;
+		margin-bottom: 8%;
+		display: grid;
+		grid-gap: 0%;
+		grid-template-columns: 1fr);
+		grid-template-areas:
+			"kanjione"
+			"headerroomtxt" 
+			"roomintrotext";
+	}
+	
+	#roomheader {
+		grid-area: headerroomtxt;
+		font-size: 1.5rem;
+		margin:0 auto;
+		margin-left: 10%;
+		margin-right: 10%;
+		margin-top: 20%
+	}
+
+	#roomintrotext {
+		grid-area: roomintrotext;
+		color: #628c56;
+		font-size: 1.2rem;
+		text-align: left;
+		margin:0 auto;
+		margin-left: 10%;
+		margin-right: 10%;
+		margin-top: 5%
+		
+	}
+		
+	#kanji {
+		grid-area: kanjione;
+		width: 50%;
+		margin:0 auto;
+		
+	}
+
+	#nexttokanji {
+		margin-top: 0%;
+	}
+
+	#downarrow {
+		width: 15%;
+		margin: 0 auto;		
+		margin-top: 10%;
+	}
+	
+	#roomintrotxt {
+		font-size: 1.2rem;
+		text-align: left;
+		margin:0 auto;
+		margin-left: 10%;
+		margin-right: 10%;
+		margin-top: 5%
+		line-height: 2rem;
+	}
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  	.overlay {overflow-y: auto;}
+	.overlay a {
+		font-size: 1.4rem;
+		line-height: 3rem;
+	}
+	.overlay .closebtn {
+	font-size: 3rem;
+	top: 30px;
+	right: 30px;
+	}
+	
+	
+	.row2 {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-areas:
+			"a b c"
+			"d e f"
+			". z ."
+			"g g g"
+			"h h h"
+			"i i i";
+		}
+	
+	img {
+			width: 100%;
+		}
+	#maintitle {
+			font-size: 1.68rem;
+		}
+	#tagline {
+			font-size: 1.25rem;
+			line-height: 2rem;
+			padding: 2%;
+		}
+		
+	.title {
+			font-size: 1.5rem;
+	}
+	
+	p {
+		font-size: 1rem;
+	}
+	
+	footer {
+		font-size: 0.625rem;
+		}
+	
+	
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  	.overlay {overflow-y: auto;}
+	.overlay a {
+		font-size: 1.6rem;
+		line-height: 3rem;
+	}
+	.overlay .closebtn {
+	font-size: 3rem;
+	top: 30px;
+	right: 30px;
+	}
+	
+	.row2 {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-areas:
+			"a b c"
+			"d e f"
+			". z ."
+			"g g g"
+			"h h h"
+			"i i i";
+	}
+	
+	img {
+		width: 100%;
+	}
+		
+	#maintitle {
+		font-size: 1.68rem;
+	}
+	#tagline {
+		font-size: 1.5rem;
+		line-height: 2rem;
+		padding: 2%;
+	}
+		
+	.title {
+		font-size: 1.5rem;
+	}
+	
+	p {
+		font-size: 1rem;
+	}
+	
+	footer {
+		font-size: 0.625rem;
+	}
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	.row2 {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-areas:
+			"a b c"
+			"d e f"
+			". z ."
+			"g g g"
+			"h h h"
+			"i i i";
+	}
+  
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+	.row2 { 
+		display: grid;
+		grid-gap: 25px;
+		margin-top: 4%;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-areas: 
+			"a b c"
+			"d e f"
+			". . ."
+			". . ."
+			". z ."
+			". . ."
+			". . ."
+			"g g h"
+			"g g i";
+	}
+  
+}
+ 
+ 
+
+ 
